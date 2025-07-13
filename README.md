@@ -65,3 +65,7 @@ Run the script:
 ```
 python liquor_analysis.py
 ```
+
+<img width="1282" height="902" alt="newplot" src="https://github.com/user-attachments/assets/51c1227f-c283-4f44-8d2d-c1399b0c54af" />
+<img width="1282" height="902" alt="newplot(1)" src="https://github.com/user-attachments/assets/1936b52b-a2e8-4e64-8585-0b8a04de8dc0" />
+<img width="1282" height="902" alt="newplot(2)" src="https://github.com/user-attachments/assets/f0dac669-86d2-4bc9-b649-bf601b4633cb" />
