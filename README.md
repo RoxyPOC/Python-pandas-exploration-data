@@ -36,6 +36,7 @@ Grouped by `zip_code` and `item_number`, then selected the item with the highest
 ```python
 grouped = df.groupby(['zip_code','item_number'], as_index=False)['item_number'].sum()
 most_popular = grouped.loc[grouped.groupby('zip_code')['item_number'].idxmax()]
+```
 
 ✅ TO-DO-2: Sales Percentage Per Store
 
@@ -44,22 +45,23 @@ most_popular = grouped.loc[grouped.groupby('zip_code')['item_number'].idxmax()]
     Summed up sale_dollars
 
     Calculated each store’s share of total sales
-
+```
 sales_per_store = df.groupby('store_number')['sale_dollars'].sum().reset_index()
 sales_per_store['sales_percentage'] = (sales_per_store['sale_dollars'] / total_sales) * 100
-
+```
 
 
 🚀 Getting Started
 
    - Clone the repo or download the script.
 
-    - Make sure you have the required Python libraries:
-
+   - Make sure you have the required Python libraries:
+```
 pip install pandas plotly
-
+```
 Place the finance_liquor_sales.csv file in the same directory.
 
 Run the script:
-
+```
 python liquor_analysis.py
+```
